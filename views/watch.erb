@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= video_name %></title>
+</head>
+<body>
+  <h1><%= video_name %></h1>
+  <form action="/youtube">
+    <input type="submit" value="Go back to Youtube">
+  </form>
+
+  <div style="text-align: center;">
+    <video width="720" height="480" controls>
+      <source src="/videos/<%= video_name %>.mp4" type="video/mp4">
+      Your browser does not support the HTML5 video tag.
+    </video>
+  </div>
+
+  <h2><u>Description</u></h2>
+  <small><%= video_description %></small>
+</body>
+</html>
